@@ -12,6 +12,10 @@ Template.postSubmit.events({
 			if (error) {
 				return alert(error.reason);
 			}
+			// show this result but route anyway
+	      	if (result.postExists) {
+		        alert('Esta URL ya existe');
+		    }
 			Router.go('postPage', {
 				_id: result._id
 			});
