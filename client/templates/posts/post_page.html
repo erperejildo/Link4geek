@@ -5,4 +5,9 @@
 			{{> commentItem}}
 		{{/each}}
 	</ul>
+	{{#if currentUser}}
+	    {{> commentSubmit}}
+  	{{else}}
+	    <p>Inicia sesión para comentar.</p>
+  	{{/if}}
 </template>
