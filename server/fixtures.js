@@ -8,6 +8,7 @@ if (Posts.find().count() === 0) {
     }
   });
   var tom = Meteor.users.findOne(tomId);
+  
   var sachaId = Meteor.users.insert({
     profile: {
       name: 'Sacha Greif'

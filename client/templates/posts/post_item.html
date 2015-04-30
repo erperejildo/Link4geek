@@ -3,7 +3,8 @@
     <div class="post-content">
       <h3><a href="{{url}}" target="_blank">{{title}}</a><span>{{domain}}</span></h3>
       <p>
-        enviado por {{author}}
+        enviado por {{author}},
+        <a href="{{pathFor 'postPage'}}">{{commentsCount}} comentarios</a>
         {{#if ownPost}}<a href="{{pathFor 'postEdit'}}">Editar</a>{{/if}}
       </p>
     </div>
