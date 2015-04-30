@@ -1,5 +1,5 @@
 Meteor.publish('posts', function() {
-  return Posts.find();
+	return Posts.find();
 });
 
 /*
@@ -9,3 +9,7 @@ Meteor.publish('posts', function() {
   	{fields: {url: false}});
 });
 */
+
+Meteor.publish('comments', function() {
+	return Comments.find();
+});
