@@ -5,6 +5,10 @@
     {{/each}}
     {{#if nextPath}}
       <a class="load-more" href="{{nextPath}}">Cargar más</a>
+    {{else}}
+      {{#unless ready}}
+        {{> spinner}}
+      {{/unless}}
     {{/if}}
   </div>
 </template>
