@@ -6,9 +6,9 @@
     <div class="post-content">
       <h3><a href="{{url}}" target="_blank">{{title}}</a><span>{{domain}}</span></h3>
       <p>
-        {{votes}} Votos,
+        {{pluralize votes "Voto"}}
         enviado por {{author}},
-        <a href="{{pathFor 'postPage'}}">{{commentsCount}} comentarios</a>
+        <a href="{{pathFor 'postPage'}}">{{pluralize commentsCount "comentario"}}</a>
         {{#if ownPost}}<a href="{{pathFor 'postEdit'}}">Editar</a>{{/if}}
       </p>
     </div>
