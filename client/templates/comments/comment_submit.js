@@ -23,7 +23,7 @@ Template.commentSubmit.events({
 
     var errors = {};
     if (!comment.body) {
-      errors.body = "Please write some content";
+      errors.body = "Escribe algún contenido";
       return Session.set('commentSubmitErrors', errors);
     }
 

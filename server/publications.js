@@ -11,5 +11,8 @@ Meteor.publish('posts', function() {
 */
 
 Meteor.publish('comments', function() {
-	return Comments.find();
+	check(postId, String);
+	return Comments.find({
+		postId: postId
+	});
 });
