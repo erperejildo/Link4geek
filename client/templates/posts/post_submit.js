@@ -15,11 +15,11 @@ Template.postSubmit.events({
 		Meteor.call('postInsert', post, function(error, result) {
 			// display the error to the user and abort
 			if (error) {
-				return throwError(error.reason);
+				return Errors.throw(error.reason);
 			}
 			// show this result but route anyway
 			if (result.postExists) {
-				throwError('Esta URL ya existe');
+				Errors.throw('Esta URL ya existe');
 			}
 			Router.go('postPage', {
 				_id: result._id
