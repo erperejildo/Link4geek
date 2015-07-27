@@ -1,5 +1,5 @@
 # Link4geek
-First website with Meteor.
+My first website with Meteor.
 
 This website is for share links about informatic stuff.<br/>
 Made with <a href="https://www.meteor.com/" title="Go to website" target="_blank">Meteor</a>, a Full Stack framework with
